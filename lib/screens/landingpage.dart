@@ -33,6 +33,14 @@ class LandingPage extends StatelessWidget {
                     ),
                   ),
                   Container(
+                    height: 600,
+                    width: double.infinity,
+                    child: Image.asset(
+                      'images/header2.PNG',
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Container(
                     width: 1080,
                     child: Column(
                       children: [
