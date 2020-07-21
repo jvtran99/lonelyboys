@@ -33,14 +33,6 @@ class LandingPage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 600,
-                    width: double.infinity,
-                    child: Image.asset(
-                      'images/header2.PNG',
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Container(
                     width: 1080,
                     child: Column(
                       children: [
@@ -95,6 +87,38 @@ class LandingPage extends StatelessWidget {
                         buildAskButton(context, 'Get AskGiveLocally Free'),
                         SizedBox(
                           height: 70,
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          margin: EdgeInsets.symmetric(vertical: 10),
+                          height: 300,
+                          // color: Colors.blue,
+                          width: double.infinity,
+                          child: Row(
+                            // crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                child: Container(),
+                                flex: 1,
+                              ),
+                              Expanded(
+                                flex: 8,
+                                child: Center(
+                                  child: Text(
+                                    'PEACE',
+                                    style: TextStyle(fontSize: 22),
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                flex: 8,
+                                child: Image.asset(
+                                  'images/peace.jpg',
+                                  // fit: BoxFit.fill,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                         Row(
                           children: [

@@ -51,6 +51,7 @@ flutter:
     - assets/images/asl_screens.png
     - assets/images/hands-with-phones.png
     - assets/images/helping-others.png
+    - assets/images/peace.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
