@@ -33,6 +33,14 @@ class LandingPage extends StatelessWidget {
                     ),
                   ),
                   Container(
+                    height: 400,
+                    width: double.infinity,
+                    child: Image.network(
+                      'https://www.flintneighborhoodsunited.org/wp-content/uploads/2017/01/neighborhood.jpg',
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Container(
                     width: 1080,
                     child: Column(
                       children: [
