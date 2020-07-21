@@ -6,13 +6,13 @@ Widget buildGeolocationSection(BuildContext context) {
       SizedBox(
         width: 50,
       ),
-      Expanded(
-        flex: 5,
-        child: Image.asset(
-          'hands-with-phones.png',
-          // fit: BoxFit.fill,
-        ),
-      ),
+      // Expanded(
+      //   flex: 5,
+      //   child: Image.asset(
+      //     'hands-with-phones.png',
+      //     // fit: BoxFit.fill,
+      //   ),
+      // ),
       Expanded(
         flex: 2,
         child: Container(
