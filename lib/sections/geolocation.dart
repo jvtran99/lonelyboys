@@ -9,7 +9,7 @@ Widget buildGeolocationSection(BuildContext context) {
       Expanded(
         flex: 5,
         child: Image.asset(
-          'images/hands-with-phones.png',
+          'hands-with-phones.png',
           // fit: BoxFit.fill,
         ),
       ),

@@ -115,7 +115,7 @@ Widget buildSimpleSteps(BuildContext context) {
       Expanded(
         flex: 4,
         child: Image.asset(
-          'images/asl_screens.PNG',
+          'asl_screens.PNG',
           // fit: BoxFit.fill,
         ),
       ),

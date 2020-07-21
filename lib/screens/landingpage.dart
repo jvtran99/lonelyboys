@@ -28,7 +28,7 @@ class LandingPage extends StatelessWidget {
                     height: 600,
                     width: double.infinity,
                     child: Image.asset(
-                      'images/header.png',
+                      'header.png',
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -74,7 +74,7 @@ class LandingPage extends StatelessWidget {
                               Expanded(
                                 flex: 8,
                                 child: Image.asset(
-                                  'images/helping-others.png',
+                                  'helping-others.png',
                                   // fit: BoxFit.fill,
                                 ),
                               ),
@@ -113,7 +113,7 @@ class LandingPage extends StatelessWidget {
                               Expanded(
                                 flex: 8,
                                 child: Image.asset(
-                                  'images/peace.jpg',
+                                  'peace.jpg',
                                   // fit: BoxFit.fill,
                                 ),
                               ),
