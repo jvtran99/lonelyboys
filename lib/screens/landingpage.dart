@@ -24,22 +24,22 @@ class LandingPage extends StatelessWidget {
             child: Container(
               child: Column(
                 children: [
-                  // Container(
-                  //   height: 600,
-                  //   width: double.infinity,
-                  //   child: Image.asset(
-                  //     'header.png',
-                  //     fit: BoxFit.fill,
-                  //   ),
-                  // ),
                   Container(
-                    height: 400,
+                    height: 600,
                     width: double.infinity,
-                    child: Image.network(
-                      'https://www.flintneighborhoodsunited.org/wp-content/uploads/2017/01/neighborhood.jpg',
+                    child: Image.asset(
+                      'header.png',
                       fit: BoxFit.fill,
                     ),
                   ),
+                  // Container(
+                  //   height: 400,
+                  //   width: double.infinity,
+                  //   child: Image.network(
+                  //     'https://www.flintneighborhoodsunited.org/wp-content/uploads/2017/01/neighborhood.jpg',
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
                   Container(
                     width: 1080,
                     child: Column(
@@ -79,13 +79,13 @@ class LandingPage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              // Expanded(
-                              //   flex: 8,
-                              //   child: Image.asset(
-                              //     'helping-others.png',
-                              //     // fit: BoxFit.fill,
-                              //   ),
-                              // ),
+                              Expanded(
+                                flex: 8,
+                                child: Image.asset(
+                                  'helping-others.png',
+                                  // fit: BoxFit.fill,
+                                ),
+                              ),
                             ],
                           ),
                         ),
@@ -118,13 +118,13 @@ class LandingPage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              // Expanded(
-                              //   flex: 8,
-                              //   child: Image.asset(
-                              //     'peace.jpg',
-                              //     // fit: BoxFit.fill,
-                              //   ),
-                              // ),
+                              Expanded(
+                                flex: 8,
+                                child: Image.asset(
+                                  'peace.jpg',
+                                  // fit: BoxFit.fill,
+                                ),
+                              ),
                             ],
                           ),
                         ),

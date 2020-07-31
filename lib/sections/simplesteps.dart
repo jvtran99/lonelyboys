@@ -112,13 +112,13 @@ Widget buildSimpleSteps(BuildContext context) {
           ],
         ),
       ),
-      // Expanded(
-      //   flex: 4,
-      //   child: Image.asset(
-      //     'asl_screens.PNG',
-      //     // fit: BoxFit.fill,
-      //   ),
-      // ),
+      Expanded(
+        flex: 4,
+        child: Image.asset(
+          'asl_screens.PNG',
+          // fit: BoxFit.fill,
+        ),
+      ),
     ],
   );
 }
