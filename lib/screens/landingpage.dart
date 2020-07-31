@@ -28,24 +28,16 @@ class LandingPage extends StatelessWidget {
                     height: 600,
                     width: double.infinity,
                     child: Image.asset(
-                      'header.png',
+                      'agl_village_skyline.png',
                       fit: BoxFit.fill,
                     ),
                   ),
-                  // Container(
-                  //   height: 400,
-                  //   width: double.infinity,
-                  //   child: Image.network(
-                  //     'https://www.flintneighborhoodsunited.org/wp-content/uploads/2017/01/neighborhood.jpg',
-                  //     fit: BoxFit.fill,
-                  //   ),
-                  // ),
                   Container(
                     width: 1080,
                     child: Column(
                       children: [
                         Container(
-                          margin: EdgeInsets.symmetric(vertical: 10),
+                          margin: EdgeInsets.only(top: 10),
                           padding: EdgeInsets.all(10),
                           height: 400,
                           width: double.infinity,
@@ -82,7 +74,7 @@ class LandingPage extends StatelessWidget {
                               Expanded(
                                 flex: 8,
                                 child: Image.asset(
-                                  'helping-others.png',
+                                  'agl_donate.png',
                                   // fit: BoxFit.fill,
                                 ),
                               ),
@@ -95,38 +87,6 @@ class LandingPage extends StatelessWidget {
                         buildAskButton(context, 'Get AskGiveLocally Free'),
                         SizedBox(
                           height: 70,
-                        ),
-                        Container(
-                          padding: EdgeInsets.all(10),
-                          margin: EdgeInsets.symmetric(vertical: 10),
-                          height: 300,
-                          // color: Colors.blue,
-                          width: double.infinity,
-                          child: Row(
-                            // crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Expanded(
-                                child: Container(),
-                                flex: 1,
-                              ),
-                              Expanded(
-                                flex: 8,
-                                child: Center(
-                                  child: Text(
-                                    'PEACE',
-                                    style: TextStyle(fontSize: 22),
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                flex: 8,
-                                child: Image.asset(
-                                  'peace.jpg',
-                                  // fit: BoxFit.fill,
-                                ),
-                              ),
-                            ],
-                          ),
                         ),
                         Row(
                           children: [
@@ -211,7 +171,11 @@ class LandingPage extends StatelessWidget {
                       Expanded(
                         flex: 6,
                         child: Text(
-                            'Made by your neighbors in Austin, Texas.© Nextdoor 2020.'),
+                          'Made by your neighbors in Austin, Texas.© Nextdoor 2020.',
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                       ),
                       Expanded(
                         flex: 1,

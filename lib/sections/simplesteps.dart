@@ -108,7 +108,10 @@ Widget buildSimpleSteps(BuildContext context) {
             SizedBox(
               height: 30,
             ),
-            buildAskButton(context, 'Get AskGiveLocally Free')
+            buildAskButton(
+              context,
+              'Download Free!',
+            )
           ],
         ),
       ),
