@@ -52,6 +52,10 @@ flutter:
     - assets/hands-with-phones.png
     - assets/helping-others.png
     - assets/peace.jpg
+    - assets/agl_village_skyline.png
+    - assets/agl_village_skyline_small.png
+    - assets/agl_hands.png
+    - assets/agl_donate.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
