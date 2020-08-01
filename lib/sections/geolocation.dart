@@ -8,8 +8,8 @@ Widget buildGeolocationSection(BuildContext context) {
       ),
       Expanded(
         flex: 8,
-        child: Image.asset(
-          'agl_hands.png',
+        child: Image.network(
+          'https://firebasestorage.googleapis.com/v0/b/lonelyboys-1767f.appspot.com/o/agl_hands.png?alt=media&token=8481ad89-98ac-4428-ba07-52231b7f61f2',
           // fit: BoxFit.fill,
         ),
       ),
