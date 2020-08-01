@@ -55,33 +55,9 @@ class LandingPage extends StatelessWidget {
                                       blurRadius: 3.0,
                                       color: Color.fromARGB(255, 0, 0, 0),
                                     ),
-                                    // Shadow(
-                                    //   offset: Offset(10.0, 10.0),
-                                    //   blurRadius: 8.0,
-                                    //   color: Color.fromARGB(125, 0, 0, 255),
-                                    // ),
                                   ],
                                 ),
                               ),
-                              // SizedBox(
-                              //   height: 24,
-                              // ),
-                              // Text(
-                              //   'Ask Give Locally is a hub for you to Give, Ask, and Share unwanted goods with your neighbors. ',
-                              //   textAlign: TextAlign.center,
-                              //   style: TextStyle(
-                              //       fontSize: 20.0,
-                              //       fontFamily: 'bold',
-                              //       fontWeight: FontWeight.bold,
-                              //       color: Color.fromRGBO(255, 255, 255, 1),
-                              //       shadows: <Shadow>[
-                              //         Shadow(
-                              //           offset: Offset(1.0, 1.0),
-                              //           blurRadius: 6.0,
-                              //           color: Color.fromARGB(255, 0, 0, 0),
-                              //         ),
-                              //       ]),
-                              // ),
                             ],
                           ),
                         ),
@@ -100,8 +76,6 @@ class LandingPage extends StatelessWidget {
                           child: buildSimpleSteps(context),
                         ),
                         Container(
-                          // color: Colors.green,
-                          // padding: EdgeInsets.all(10),
                           width: double.infinity,
                           child: buildGeolocationSection(context),
                         ),
@@ -109,10 +83,8 @@ class LandingPage extends StatelessWidget {
                           padding: EdgeInsets.all(10),
                           margin: EdgeInsets.symmetric(vertical: 10),
                           height: 300,
-                          // color: Colors.blue,
                           width: double.infinity,
                           child: Row(
-                            // crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: Container(),
@@ -129,9 +101,8 @@ class LandingPage extends StatelessWidget {
                               ),
                               Expanded(
                                 flex: 8,
-                                child: Image.asset(
-                                  'agl_donate.png',
-                                  // fit: BoxFit.fill,
+                                child: Image.network(
+                                  'https://firebasestorage.googleapis.com/v0/b/lonelyboys-1767f.appspot.com/o/agl_donate.png?alt=media&token=29c4398d-cad7-4e6c-8395-ebc501d4fb73',
                                 ),
                               ),
                             ],
