@@ -10,7 +10,7 @@ class LandingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Ask. Give. Locally'),
+        title: Text('Ask Give Locally'),
         actions: [
           Icon(Icons.file_download),
         ],
@@ -25,12 +25,68 @@ class LandingPage extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    height: 600,
-                    width: double.infinity,
-                    child: Image.asset(
-                      'agl_village_skyline.png',
-                      fit: BoxFit.fill,
-                    ),
+                    child: Stack(children: <Widget>[
+                      Image.network(
+                        'https://firebasestorage.googleapis.com/v0/b/lonelyboys-1767f.appspot.com/o/AdobeStock_296610026_village%20skyline_opt.png?alt=media&token=f91136ae-27b2-4ce4-9cae-c7feb6fb455c',
+                        // 'https://firebasestorage.googleapis.com/v0/b/lonelyboys-1767f.appspot.com/o/agl_village_skyline_small.png?alt=media&token=65a05fe3-8cd5-472a-957c-094b1958cb72',
+                        fit: BoxFit.fill,
+                        // color: Colors.black26,
+                        // colorBlendMode: BlendMode.softLight,
+                      ),
+                      Align(
+                        alignment: Alignment.center,
+                        child: Container(
+                          padding: EdgeInsets.only(top: 80),
+                          width: 600,
+                          alignment: Alignment.center,
+                          child: Column(
+                            children: [
+                              Text(
+                                'Get rid of your stuff and help out your neighbors',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 50.0,
+                                  fontFamily: 'bold',
+                                  fontWeight: FontWeight.bold,
+                                  color: Color.fromRGBO(255, 255, 255, 1),
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(3.0, 3.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                    // Shadow(
+                                    //   offset: Offset(10.0, 10.0),
+                                    //   blurRadius: 8.0,
+                                    //   color: Color.fromARGB(125, 0, 0, 255),
+                                    // ),
+                                  ],
+                                ),
+                              ),
+                              // SizedBox(
+                              //   height: 24,
+                              // ),
+                              // Text(
+                              //   'Ask Give Locally is a hub for you to Give, Ask, and Share unwanted goods with your neighbors. ',
+                              //   textAlign: TextAlign.center,
+                              //   style: TextStyle(
+                              //       fontSize: 20.0,
+                              //       fontFamily: 'bold',
+                              //       fontWeight: FontWeight.bold,
+                              //       color: Color.fromRGBO(255, 255, 255, 1),
+                              //       shadows: <Shadow>[
+                              //         Shadow(
+                              //           offset: Offset(1.0, 1.0),
+                              //           blurRadius: 6.0,
+                              //           color: Color.fromARGB(255, 0, 0, 0),
+                              //         ),
+                              //       ]),
+                              // ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ]),
                   ),
                   Container(
                     width: 1080,
@@ -171,7 +227,7 @@ class LandingPage extends StatelessWidget {
                       Expanded(
                         flex: 6,
                         child: Text(
-                          'Made by your neighbors in Austin, Texas.© Nextdoor 2020.',
+                          'Made by your neighbors in Austin, Texas.© AskGiveLocally 2020.',
                           style: TextStyle(
                             color: Colors.white,
                           ),
