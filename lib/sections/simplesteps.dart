@@ -117,8 +117,8 @@ Widget buildSimpleSteps(BuildContext context) {
       ),
       Expanded(
         flex: 4,
-        child: Image.asset(
-          'asl_screens2.PNG',
+        child: Image.network(
+          'https://firebasestorage.googleapis.com/v0/b/lonelyboys-1767f.appspot.com/o/asl_screens2.png?alt=media&token=8dea1d41-edbb-4ce2-b908-1fdd580296a5',
           // fit: BoxFit.fill,
         ),
       ),
