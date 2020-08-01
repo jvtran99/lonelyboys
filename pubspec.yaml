@@ -49,6 +49,7 @@ flutter:
     - assets/header.png
     # - assets/header2.PNG
     - assets/asl_screens.png
+    - assets/asl_screens2.png
     - assets/hands-with-phones.png
     - assets/helping-others.png
     - assets/peace.jpg

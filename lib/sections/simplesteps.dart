@@ -57,7 +57,7 @@ Widget buildSimpleSteps(BuildContext context) {
                             ),
                             SizedBox(width: 10),
                             Text(
-                              "Comment",
+                              "Post Unwanted Items",
                             )
                           ],
                         ),
@@ -118,7 +118,7 @@ Widget buildSimpleSteps(BuildContext context) {
       Expanded(
         flex: 4,
         child: Image.asset(
-          'asl_screens.PNG',
+          'asl_screens2.PNG',
           // fit: BoxFit.fill,
         ),
       ),
