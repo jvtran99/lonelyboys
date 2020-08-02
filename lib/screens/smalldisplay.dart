@@ -54,6 +54,7 @@ Widget buildSmallDisplay(BuildContext context) {
               padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
               child: Text(
                 'Simple steps to get started'.toUpperCase(),
+                textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 26),
               ),
             ),
@@ -67,7 +68,7 @@ Widget buildSmallDisplay(BuildContext context) {
                 Expanded(
                   flex: 3,
                   child: Container(
-                    margin: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                    margin: EdgeInsets.fromLTRB(8, 0, 0, 0),
                     child: Column(
                       children: [
                         Row(
