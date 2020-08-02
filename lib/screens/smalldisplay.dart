@@ -48,26 +48,26 @@ Widget buildSmallDisplay(BuildContext context) {
           ]),
         ),
         Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(
-              height: 20,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
+              child: Text(
+                'Simple steps to get started'.toUpperCase(),
+                style: TextStyle(fontSize: 26),
+              ),
             ),
-            Text(
-              'Simple steps to get started'.toUpperCase(),
-              style: TextStyle(fontSize: 26),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Container(
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Container(),
-                    flex: 1,
-                  ),
-                  Expanded(
-                    flex: 3,
+
+            Row(
+              children: [
+                // Expanded(
+                //   child: Container(),
+                //   flex: 1,
+                // ),
+                Expanded(
+                  flex: 3,
+                  child: Container(
+                    margin: EdgeInsets.fromLTRB(20, 0, 0, 0),
                     child: Column(
                       children: [
                         Row(
@@ -138,19 +138,20 @@ Widget buildSmallDisplay(BuildContext context) {
                       ],
                     ),
                   ),
-                  Expanded(
-                    child: Container(
-                      height: 200,
-                      child: Image.network(
-                        'https://firebasestorage.googleapis.com/v0/b/lonelyboys-1767f.appspot.com/o/asl_screens2.png?alt=media&token=8dea1d41-edbb-4ce2-b908-1fdd580296a5',
-                        // fit: BoxFit.fill,
-                      ),
+                ),
+                Expanded(
+                  flex: 4,
+                  child: Container(
+                    height: 200,
+                    child: Image.network(
+                      'https://firebasestorage.googleapis.com/v0/b/lonelyboys-1767f.appspot.com/o/asl_screens2.png?alt=media&token=8dea1d41-edbb-4ce2-b908-1fdd580296a5',
+                      // fit: BoxFit.fill,
                     ),
-                    flex: 4,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
+
             // Container(
             //   height: 200,
             //   child: Image.network(
