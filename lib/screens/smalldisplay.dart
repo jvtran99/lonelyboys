@@ -47,18 +47,17 @@ Widget buildSmallDisplay(BuildContext context) {
             ),
           ]),
         ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
+          child: Text(
+            'Simple steps to get started'.toUpperCase(),
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 20),
+          ),
+        ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
-              child: Text(
-                'Simple steps to get started'.toUpperCase(),
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 26),
-              ),
-            ),
-
             Row(
               children: [
                 // Expanded(
@@ -166,7 +165,7 @@ Widget buildSmallDisplay(BuildContext context) {
             LayoutBuilder(builder: (context, constraints) {
               if (constraints.maxWidth > 400) {
                 return FlatButton(
-                  padding: EdgeInsets.symmetric(horizontal: 80, vertical: 20),
+                  padding: EdgeInsets.symmetric(horizontal: 180, vertical: 20),
                   onPressed: () {},
                   child: Text(
                     "Download Free",
@@ -204,6 +203,9 @@ Widget buildSmallDisplay(BuildContext context) {
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 22),
           ),
+        ),
+        SizedBox(
+          height: 20,
         ),
         Image.network(
           'https://firebasestorage.googleapis.com/v0/b/lonelyboys-1767f.appspot.com/o/agl_donate.png?alt=media&token=29c4398d-cad7-4e6c-8395-ebc501d4fb73',
@@ -249,9 +251,6 @@ Widget buildSmallDisplay(BuildContext context) {
                       buildIconText(context, Icons.radio, 'Radio'),
                       buildIconText(context, Icons.face, 'Face'),
                       buildIconText(context, Icons.accessible, 'Accessible'),
-                      buildIconText(context, Icons.ac_unit, 'ac unit'),
-                      buildIconText(context, Icons.access_time, 'Time'),
-                      buildIconText(context, Icons.verified_user, 'User'),
                     ],
                   ),
                 ),
