@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 
 Widget buildAskButton(BuildContext context, String text) {
   return FlatButton(
-    padding: EdgeInsets.symmetric(horizontal: 80, vertical: 30),
+    padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
     onPressed: () {},
-    // child: Text('Get AskGiveLocally Free'),
     child: Text(text),
     color: Theme.of(context).accentColor,
     shape: new RoundedRectangleBorder(
