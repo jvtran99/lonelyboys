@@ -162,30 +162,20 @@ Widget buildSmallDisplay(BuildContext context) {
             SizedBox(
               height: 40,
             ),
-            LayoutBuilder(builder: (context, constraints) {
-              if (constraints.maxWidth > 400) {
-                return FlatButton(
-                  padding: EdgeInsets.symmetric(horizontal: 180, vertical: 20),
-                  onPressed: () {},
-                  child: Text(
-                    "Download Free",
-                    style: TextStyle(fontSize: 18),
-                  ),
-                  color: Theme.of(context).accentColor,
-                  shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(20.0)),
-                );
-              } else {
-                return FlatButton(
-                  padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                  onPressed: () {},
-                  child: Text("Download Free"),
-                  color: Theme.of(context).accentColor,
-                  shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(20.0)),
-                );
-              }
-            }),
+            FlatButton(
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+              onPressed: () {},
+              child: SizedBox.expand(
+                child: Text(
+                  "Download Free",
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              color: Theme.of(context).accentColor,
+              shape: new RoundedRectangleBorder(
+                  borderRadius: new BorderRadius.circular(20.0)),
+            ),
+
             // SizedBox(
             //   height: 18,
             // ),
