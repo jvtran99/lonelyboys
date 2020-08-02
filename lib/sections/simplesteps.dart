@@ -7,6 +7,10 @@ Widget buildSimpleSteps(BuildContext context) {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Expanded(
+          flex: 1,
+          child: Container(),
+        ),
+        Expanded(
           flex: 4,
           child: Column(
             children: [
