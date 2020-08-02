@@ -68,7 +68,7 @@ class _LandingPageState extends State<LandingPage> {
                     children: [
                       Container(
                         margin: EdgeInsets.only(top: 10),
-                        padding: EdgeInsets.all(10),
+                        // padding: EdgeInsets.all(10),
                         height: 400,
                         width: double.infinity,
                         child: buildSimpleSteps(context),
