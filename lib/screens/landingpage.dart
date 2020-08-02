@@ -215,10 +215,8 @@ class _LandingPageState extends State<LandingPage> {
 
   Widget _smallDisplay() {
     return Container(
-      // color: Theme.of(context).primaryColor,
       color: Colors.white,
       child: Center(
-        // widthFactor: 900,
         child: SingleChildScrollView(
           child: Container(
             child: Column(
@@ -235,7 +233,7 @@ class _LandingPageState extends State<LandingPage> {
                     Align(
                       alignment: Alignment.center,
                       child: Container(
-                        padding: EdgeInsets.only(top: 80),
+                        padding: EdgeInsets.only(top: 8),
                         width: 600,
                         alignment: Alignment.center,
                         child: Column(
