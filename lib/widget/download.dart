@@ -5,7 +5,7 @@ import 'dart:js' as js;
 showAlertDialog(BuildContext context) {
   // set up the buttons
   Widget cancelButton = FlatButton(
-    color: Colors.amber,
+    // color: Colors.amber,
     child: Text("Google Play"),
     onPressed: () {
       js.context.callMethod("open", [
@@ -14,7 +14,7 @@ showAlertDialog(BuildContext context) {
     },
   );
   Widget continueButton = FlatButton(
-    color: Colors.amber,
+    // color: Colors.amber,
     child: Text("Apple App Store"),
     onPressed: () {
       js.context.callMethod("open",
