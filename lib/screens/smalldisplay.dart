@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../widget/flatbutton.dart';
 import '../widget/icon_text.dart';
+import '../widget/download.dart';
 
 Widget buildSmallDisplay(BuildContext context) {
   return SingleChildScrollView(
@@ -167,7 +168,9 @@ Widget buildSmallDisplay(BuildContext context) {
               width: double.infinity,
               child: FlatButton(
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 24),
-                onPressed: () {},
+                onPressed: () {
+                  showAlertDialog(context);
+                },
                 child: Text(
                   "Download Free",
                   textAlign: TextAlign.center,
@@ -232,18 +235,18 @@ Widget buildSmallDisplay(BuildContext context) {
                     spacing: 40,
                     runSpacing: 30,
                     children: <Widget>[
-                      buildIconText(context, Icons.arrow_back, 'Arrow'),
-                      buildIconText(context, Icons.nature, 'Nature'),
-                      buildIconText(context, Icons.label, 'Label'),
-                      buildIconText(context, Icons.radio, 'Radio'),
-                      buildIconText(context, Icons.face, 'Face'),
-                      buildIconText(context, Icons.accessible, 'Accessible'),
-                      buildIconText(context, Icons.ac_unit, 'ac unit'),
-                      buildIconText(context, Icons.access_time, 'Time'),
-                      buildIconText(context, Icons.verified_user, 'User'),
-                      buildIconText(context, Icons.radio, 'Radio'),
-                      buildIconText(context, Icons.face, 'Face'),
-                      buildIconText(context, Icons.accessible, 'Accessible'),
+                      buildIconText(context, Icons.arrow_back, 'Appliances'),
+                      buildIconText(context, Icons.nature, 'Arts'),
+                      buildIconText(context, Icons.label, 'Baby Stuff'),
+                      buildIconText(context, Icons.radio, 'Books'),
+                      buildIconText(context, Icons.face, 'Clothing'),
+                      buildIconText(context, Icons.accessible, 'Furniture'),
+                      buildIconText(context, Icons.ac_unit, 'Games'),
+                      buildIconText(context, Icons.access_time, 'Gardening'),
+                      buildIconText(context, Icons.verified_user, 'Home'),
+                      buildIconText(context, Icons.radio, 'Movies'),
+                      buildIconText(context, Icons.face, 'Pet Stuff'),
+                      buildIconText(context, Icons.accessible, 'Toys'),
                     ],
                   ),
                 ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widget/download.dart';
+
 Widget buildSimpleSteps(BuildContext context) {
   return Padding(
     padding: const EdgeInsets.all(8.0),
@@ -115,7 +117,9 @@ Widget buildSimpleSteps(BuildContext context) {
                 if (constraints.maxWidth > 400) {
                   return FlatButton(
                     padding: EdgeInsets.symmetric(horizontal: 80, vertical: 20),
-                    onPressed: () {},
+                    onPressed: () {
+                      showAlertDialog(context);
+                    },
                     child: Text(
                       "Download Free",
                       style: TextStyle(fontSize: 18),
@@ -127,7 +131,9 @@ Widget buildSimpleSteps(BuildContext context) {
                 } else {
                   return FlatButton(
                     padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                    onPressed: () {},
+                    onPressed: () {
+                      showAlertDialog(context);
+                    },
                     child: Text("Download Free"),
                     color: Theme.of(context).accentColor,
                     shape: new RoundedRectangleBorder(
