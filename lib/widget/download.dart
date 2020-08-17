@@ -15,7 +15,7 @@ showAlertDialog(BuildContext context) {
   );
   Widget continueButton = FlatButton(
     color: Colors.amber,
-    child: Text("Apple App Store"),
+    child: Text("App Store"),
     onPressed: () {
       js.context.callMethod("open",
           ["https://apps.apple.com/us/app/ask-give-locally/id1522135123"]);
