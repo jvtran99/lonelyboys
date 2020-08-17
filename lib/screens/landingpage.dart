@@ -135,34 +135,36 @@ class _LandingPageState extends State<LandingPage> {
                                   spacing: 100,
                                   runSpacing: 60,
                                   children: <Widget>[
+                                    buildIconText(context, Icons.arrow_back,
+                                        'Appliances'),
                                     buildIconText(
-                                        context, Icons.arrow_back, 'Arrow'),
+                                        context, Icons.nature, 'Arts'),
                                     buildIconText(
-                                        context, Icons.nature, 'Nature'),
+                                        context, Icons.label, 'Baby Stuff'),
                                     buildIconText(
-                                        context, Icons.label, 'Label'),
+                                        context, Icons.radio, 'Books'),
                                     buildIconText(
-                                        context, Icons.radio, 'Radio'),
-                                    buildIconText(context, Icons.face, 'Face'),
-                                    buildIconText(context, Icons.accessible,
-                                        'Accessible'),
+                                        context, Icons.face, 'Clothing'),
                                     buildIconText(
-                                        context, Icons.ac_unit, 'ac unit'),
+                                        context, Icons.accessible, 'Furniture'),
                                     buildIconText(
-                                        context, Icons.access_time, 'Time'),
+                                        context, Icons.ac_unit, 'Games'),
+                                    buildIconText(context, Icons.access_time,
+                                        'Gardening'),
                                     buildIconText(
-                                        context, Icons.verified_user, 'User'),
+                                        context, Icons.verified_user, 'Home'),
                                     buildIconText(
-                                        context, Icons.radio, 'Radio'),
-                                    buildIconText(context, Icons.face, 'Face'),
-                                    buildIconText(context, Icons.accessible,
-                                        'Accessible'),
+                                        context, Icons.radio, 'Movies'),
                                     buildIconText(
-                                        context, Icons.ac_unit, 'ac unit'),
+                                        context, Icons.face, 'Pet Stuff'),
                                     buildIconText(
-                                        context, Icons.access_time, 'Time'),
+                                        context, Icons.accessible, 'Shoes'),
                                     buildIconText(
-                                        context, Icons.verified_user, 'User'),
+                                        context, Icons.ac_unit, 'Toys'),
+                                    buildIconText(
+                                        context, Icons.access_time, 'Tools'),
+                                    buildIconText(context, Icons.verified_user,
+                                        'Any More'),
                                   ],
                                 ),
                               ),
